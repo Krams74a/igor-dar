@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/igor-dar/static/css/main.80ef2f8d.css",
+    "main.js": "/igor-dar/static/js/main.746447de.js",
+    "static/media/doctor-doing-their-work-pediatrics-office.jpg": "/igor-dar/static/media/doctor-doing-their-work-pediatrics-office.b3923abdb42390b995b4.jpg",
+    "static/media/IMG_8315.jpg": "/igor-dar/static/media/IMG_8315.369a9145764ac03a16b6.jpg",
+    "static/media/hero-background.png": "/igor-dar/static/media/hero-background.6aa889355ca42b741815.png",
+    "static/media/s4.jpg": "/igor-dar/static/media/s4.17a9459f5cf35350a380.jpg",
+    "static/media/logo.png": "/igor-dar/static/media/logo.4d2dd89055af90088f1c.png",
+    "static/media/s1.jpg": "/igor-dar/static/media/s1.859cca16b0ac10a8226a.jpg",
+    "static/media/s2.jpg": "/igor-dar/static/media/s2.9e3305a1e11efb48310b.jpg",
+    "static/media/s3.jpg": "/igor-dar/static/media/s3.0e2921ce8f5e2d2181c6.jpg",
+    "static/media/symptoms2.jpg": "/igor-dar/static/media/symptoms2.58f6cab8f32a3ed38874.jpg",
+    "static/media/symptoms1.jpg": "/igor-dar/static/media/symptoms1.d2695dfbceae457ce081.jpg",
+    "static/media/symptoms3.jpg": "/igor-dar/static/media/symptoms3.d99b31c3f5d14f17811b.jpg",
+    "static/media/ratemypost.ttf": "/igor-dar/static/media/ratemypost.595102e8a8212f847e9d.ttf",
+    "index.html": "/igor-dar/index.html",
+    "main.80ef2f8d.css.map": "/igor-dar/static/css/main.80ef2f8d.css.map",
+    "main.746447de.js.map": "/igor-dar/static/js/main.746447de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80ef2f8d.css",
+    "static/js/main.746447de.js"
+  ]
+}
