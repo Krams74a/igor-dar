@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/igor-dar/static/css/main.145e0f00.css",
-    "main.js": "/igor-dar/static/js/main.c95775d9.js",
-    "static/media/doctor-doing-their-work-pediatrics-office.jpg": "/igor-dar/static/media/doctor-doing-their-work-pediatrics-office.b3923abdb42390b995b4.jpg",
-    "static/media/IMG_8315.jpg": "/igor-dar/static/media/IMG_8315.369a9145764ac03a16b6.jpg",
-    "static/media/hero-background.png": "/igor-dar/static/media/hero-background.6aa889355ca42b741815.png",
+    "main.css": "/igor-dar/static/css/main.fbc6346b.css",
+    "main.js": "/igor-dar/static/js/main.5505f9e6.js",
+    "static/media/how_to_book.jpg": "/igor-dar/static/media/how_to_book.b3923abdb42390b995b4.jpg",
+    "static/media/igor_dar.jpg": "/igor-dar/static/media/igor_dar.369a9145764ac03a16b6.jpg",
+    "static/media/main_image.jpg": "/igor-dar/static/media/main_image.1fa59e8f852e7e34cd58.jpg",
     "static/media/s4.jpg": "/igor-dar/static/media/s4.17a9459f5cf35350a380.jpg",
     "static/media/logo.png": "/igor-dar/static/media/logo.4d2dd89055af90088f1c.png",
     "static/media/s1.jpg": "/igor-dar/static/media/s1.859cca16b0ac10a8226a.jpg",
@@ -14,11 +14,11 @@
     "static/media/symptoms1.jpg": "/igor-dar/static/media/symptoms1.d2695dfbceae457ce081.jpg",
     "static/media/symptoms3.jpg": "/igor-dar/static/media/symptoms3.d99b31c3f5d14f17811b.jpg",
     "index.html": "/igor-dar/index.html",
-    "main.145e0f00.css.map": "/igor-dar/static/css/main.145e0f00.css.map",
-    "main.c95775d9.js.map": "/igor-dar/static/js/main.c95775d9.js.map"
+    "main.fbc6346b.css.map": "/igor-dar/static/css/main.fbc6346b.css.map",
+    "main.5505f9e6.js.map": "/igor-dar/static/js/main.5505f9e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.145e0f00.css",
-    "static/js/main.c95775d9.js"
+    "static/css/main.fbc6346b.css",
+    "static/js/main.5505f9e6.js"
   ]
 }
