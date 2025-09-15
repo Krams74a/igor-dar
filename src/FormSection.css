@@ -1,0 +1,80 @@
+/* Фон секции */
+.form-section {
+    background: linear-gradient(135deg, #f0faff 0%, #2CA9DA 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* Стеклянный блок формы */
+  .glass-form {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .glass-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+  }
+  
+  /* Поля формы в стеклянном стиле */
+  .form-control-glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .form-control-glass:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(13,110,253,0.5);
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  
+  /* Кнопка отправки */
+  .submit-btn {
+    background: var(--color-accent);
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Заголовок и текст */
+  .form-section h2 {
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .form-section p {
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  /* Адаптив */
+  @media (max-width: 767.98px) {
+    .glass-form {
+      padding: 20px;
+    }
+  
+    .form-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .form-section p {
+      font-size: 0.95rem;
+    }
+  }
+  

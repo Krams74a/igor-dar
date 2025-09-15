@@ -1,0 +1,82 @@
+/* Фон секции процесса */
+.process-section {
+  background: linear-gradient(135deg, #c8e1f6 0%, #a3cde0 100%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #000;
+}
+
+/* Заголовки */
+.process-section h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+/* Стеклянные карточки процесса */
+.process-section .glass-block {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 16px;
+  padding: 20px;
+
+  /* Глубокая тень для эффекта парения */
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.15),
+    0 20px 40px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-section .glass-block:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Номер шага */
+.process-section .glass-block > div:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2CA9DA;
+}
+
+/* Заголовок и текст шага */
+.process-section .glass-block h5 {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.process-section .glass-block p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Адаптив */
+@media (max-width: 991.98px) {
+  .process-section .glass-block {
+    padding: 15px;
+  }
+
+  .process-section .glass-block > div:first-child {
+    font-size: 1.8rem;
+  }
+
+  .process-section .glass-block h5 {
+    font-size: 1rem;
+  }
+
+  .process-section .glass-block p {
+    font-size: 0.9rem;
+  }
+}
+.process-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* расстояние между карточками */
+}

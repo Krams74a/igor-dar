@@ -1,0 +1,88 @@
+#facts {
+  background: linear-gradient(135deg, #f0faff 0%, #2CA9DA 100%);
+  padding: 60px 0;
+}
+
+#facts h2 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 2.2rem; /* увеличили */
+}
+
+/* Общий стеклянный стиль для карточки */
+.fact-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 35px 30px; /* немного увеличили паддинг */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* Строка с иконкой и заголовком */
+.fact-card .d-flex.align-items-center {
+  margin-bottom: 18px;
+}
+
+.fact-card h5 {
+  font-weight: 700;
+  font-size: 1.5rem; /* увеличили */
+  color: #000; /* черный текст */
+}
+
+/* Текст факта */
+.fact-card p {
+  color: #000; /* черный текст */
+  font-size: 1.15rem; /* увеличили */
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* Иконки */
+.fact-card .text-primary {
+  color: #0d6efd !important;
+}
+
+.fact-card .text-success {
+  color: #198754 !important;
+}
+
+.fact-card .text-warning {
+  color: #ffc107 !important;
+}
+
+.fact-card .text-danger {
+  color: #dc3545 !important;
+}
+
+/* Адаптив */
+@media (max-width: 991.98px) {
+  #facts h2 {
+      font-size: 1.9rem;
+  }
+
+  .fact-card {
+      padding: 25px 20px;
+  }
+
+  .fact-card h5 {
+      font-size: 1.3rem;
+  }
+
+  .fact-card p {
+      font-size: 1.05rem;
+  }
+}

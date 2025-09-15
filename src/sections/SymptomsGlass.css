@@ -1,0 +1,132 @@
+#symptoms {
+  background: linear-gradient(135deg, #eaf6ff 0%, #ffffff 100%);
+}
+
+/* Общий стеклянный блок для всего блока симптомов */
+.symptom-block-glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  /* блок не двигается */
+}
+
+/* Контейнер блока с картинкой и текстом */
+.symptoms-split {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Левая часть */
+.symptoms-content-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Правая часть */
+.symptoms-content-right {
+  flex: 1 1 300px;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Заголовок блока с иконкой */
+.title-pane {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 15px 20px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000; /* черный текст */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Иконка заголовка */
+.title-pane .icon {
+  font-size: 1.4rem;
+}
+
+/* Список симптомов */
+.symptom-pane {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #000; /* черный текст */
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+/* Эффект движения на каждом элементе списка при наведении */
+.symptom-pane:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Буллет */
+.symptom-pane::before {
+  content: "•";
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.symptom-pane + .symptom-pane {
+  margin-top: 10px;
+}
+
+/* Картинка */
+.symptoms-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+/* Двигаем картинку при наведении */
+.symptoms-image:hover {
+  transform: scale(1.1);
+}
+
+/* Адаптив */
+@media (max-width: 991.98px) {
+  .symptoms-split {
+    flex-direction: column;
+  }
+
+  .symptoms-content-right {
+    min-height: 220px;
+  }
+}
+/* Если нужно поменять порядок на реверс */
+.symptoms-split.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Адаптив */
+@media (max-width: 991.98px) {
+  .symptoms-split,
+  .symptoms-split.reverse {
+    flex-direction: column;
+  }
+}

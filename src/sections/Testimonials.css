@@ -1,0 +1,57 @@
+/* Фон секции отзывов */
+.testimonials-section {
+  background: linear-gradient(135deg, #c8e1f6 0%, #a3cde0 100%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #000;
+}
+
+/* Заголовки */
+.testimonials-section h2,
+.testimonials-section h4 {
+  font-weight: 700;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+}
+
+.testimonials-section h4 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Стеклянные карточки отзывов */
+.glass-testimonial {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+
+/* Кнопки внешних ссылок в стеклянном стиле */
+.btn-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #000;
+}
+
+/* Адаптив */
+@media (max-width: 991.98px) {
+  .testimonials-section h4 {
+    text-align: center;
+  }
+
+  .glass-testimonial {
+    max-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .d-flex.flex-wrap {
+    justify-content: center;
+  }
+}

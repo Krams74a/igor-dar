@@ -1,0 +1,42 @@
+  .hero-section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 120px;
+  }
+
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../hero-background.png') center/cover no-repeat;
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: 0;
+  }
+
+  .hero-section .glass-block {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.55); /* прозрачность 0.55 */
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+  }
+  
+  .hero-section .glass-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 768px) {
+    .hero-section { padding-top: 80px; }
+  }
+
+  @media (max-width: 576px) {
+    .hero-section { padding-top: 60px; }
+  }
