@@ -1,81 +1,105 @@
-/* Фон секции */
 .form-section {
-    background: #CEDEFF;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background: #F8F9FD;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.form-title {
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 92%;
+  text-align: center;
+  color: #2B308B;
+}
+
+.form-subtitle {
+  font-family: 'Onest', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 92%;
+  text-align: center;
+  color: #1F1F1F;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+  .form-title {
+    font-size: 2rem;
   }
-  
-  /* Стеклянный блок формы */
-  .glass-form {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  .form-subtitle {
+    font-size: 1.2rem;
   }
-  
-  .glass-form:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
-  }
-  
-  /* Поля формы в стеклянном стиле */
-  .form-control-glass {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255,255,255,0.4);
-    border-radius: 12px;
-    padding: 10px 15px;
-    color: #000;
-    font-size: 1rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .form-control-glass:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(13,110,253,0.5);
-    background-color: rgba(255, 255, 255, 0.35);
-  }
-  
-  /* Кнопка отправки */
-  .submit-btn {
-    background: #5A81FA;
-    border: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .submit-btn:hover {
-    background: #4e70d8;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  }
-  
-  /* Заголовок и текст */
-  .form-section h2 {
-    color: #000;
-    font-weight: 700;
-  }
-  
-  .form-section p {
-    color: #000;
-    font-size: 1rem;
-  }
-  
-  /* Адаптив */
-  @media (max-width: 767.98px) {
-    .glass-form {
-      padding: 20px;
-    }
-  
-    .form-section h2 {
-      font-size: 1.6rem;
-    }
-  
-    .form-section p {
-      font-size: 0.95rem;
-    }
-  }
-  
+}
+
+.glass-form {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: #d2e0fd;
+  border: 1px solid rgba(90, 129, 250, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glass-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.form-control-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 10px 15px;
+  color: #000;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control-glass:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.5);
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.hero-button {
+  position: relative;
+  width: 500px;
+  height: 60px;
+  background: #2B308B;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-button:hover {
+  background: #252977;
+  transform: translateY(-3px);
+}
+
+.hero-button span {
+  font-family: 'Onest', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #CEDEFF;
+  width: 90%;
+  display: block;
+}

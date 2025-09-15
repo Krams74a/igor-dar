@@ -1,82 +1,56 @@
-/* Фон секции процесса */
 .process-section {
-  background: #CEDEFF;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: #000;
+  background: #f9f9f9;
 }
 
-/* Заголовки */
-.process-section h2 {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #000;
-}
-
-/* Стеклянные карточки процесса */
-.process-section .glass-block {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 16px;
-  padding: 20px;
-
-  /* Глубокая тень для эффекта парения */
-  box-shadow: 
-    0 12px 24px rgba(0, 0, 0, 0.15),
-    0 20px 40px rgba(0, 0, 0, 0.1);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.process-section .glass-block:hover {
-  transform: translateY(-10px);
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.2),
-    0 30px 60px rgba(0, 0, 0, 0.15);
-}
-
-/* Номер шага */
-.process-section .glass-block > div:first-child {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2CA9DA;
-}
-
-/* Заголовок и текст шага */
-.process-section .glass-block h5 {
-  margin-top: 15px;
-  font-weight: 600;
-  color: #000;
-}
-
-.process-section .glass-block p {
-  color: #333;
-  font-size: 0.95rem;
-}
-
-/* Адаптив */
-@media (max-width: 991.98px) {
-  .process-section .glass-block {
-    padding: 15px;
-  }
-
-  .process-section .glass-block > div:first-child {
-    font-size: 1.8rem;
-  }
-
-  .process-section .glass-block h5 {
-    font-size: 1rem;
-  }
-
-  .process-section .glass-block p {
-    font-size: 0.9rem;
-  }
-}
-.process-vertical {
+.steps-list {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* расстояние между карточками */
+  gap: 2rem;
+}
+
+.step-content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3eeb;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-text h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.step-text p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .step-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .step-number {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
 }

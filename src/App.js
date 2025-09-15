@@ -1,7 +1,5 @@
-// App-wide styles are consolidated in per-section CSS and index.css
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-
+import "./App.css"
 import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Facts from './sections/Facts';

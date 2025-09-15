@@ -1,47 +1,176 @@
-  .hero-section {
-    position: relative;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 120px;
-  }
-
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('../hero-background.png') center/cover no-repeat;
-    filter: blur(8px);
-    transform: scale(1.05);
-    z-index: 0;
-  }
-
-  .hero-section .glass-block {
-    backdrop-filter: blur(8px);
-    background-color: rgba(225, 225, 225, 0.55); /* прозрачность 0.55 */
-    border-radius: 16px;
-    padding: 40px 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
-
-  }
-  
-  .hero-section .glass-block:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-  }
-
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 120px;
+}
+.hero-section::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: url('../assets/images/main_image.jpg') center/cover no-repeat;
+  z-index: 0;
+  opacity: 70%;
+}
+.hero-section .hero-glass-block {
+  backdrop-filter: blur(93%);
+  background-color: #D9D9D919;
+  border-radius: 30px;
+  padding: 40px 30px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-section .hero-glass-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+.hero-button {
+  position: relative;
+  width: 712px;
+  height: 77px;
+  background: #2B308B;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-button:hover {
+  background: #252977;
+  transform: translateY(-3px);
+}
+.hero-button span {
+  font-family: 'Onest', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 29px;
+  text-align: center;
+  color: #CEDEFF;
+  width: 500px;
+  display: block;
+}
+@media (max-width: 768px) {
   .hero-button {
-    background: #5A81FA;
-    border: none;
+    width: 90%;
   }
-
-  @media (max-width: 768px) {
-    .hero-section { padding-top: 80px; }
+  .hero-button span {
+    font-size: 24px;
+    width: 80%;
   }
-
-  @media (max-width: 576px) {
-    .hero-section { padding-top: 80px; }
+}
+@media (max-width: 576px) {
+  .hero-button {
+    width: 100%;
   }
+  .hero-button span {
+    font-size: 20px;
+    width: 90%;
+  }
+}
+.gift-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+}
+.hero-glass-block {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-glass-block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.hero-glass-block h5,
+.hero-glass-block {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-glass-block p,
+.hero-glass-block {
+  color: #333;
+  font-size: 1.55rem;
+  flex-grow: 1;
+  text-align: left;
+}
+@media (max-width: 991.98px) {
+  .hero-glass-block {
+    padding: 20px;
+  }
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .hero-glass-block h5,
+  .hero-glass-block {
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+  .hero-glass-block p,
+  .hero-glass-block {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .benefit-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-glass-block {
+    padding: 15px;
+  }
+  .hero-glass-block h5,
+  .hero-glass-block {
+    font-size: 1rem;
+  }
+  .hero-glass-block p,
+  .hero-glass-block {
+    font-size: 1.3rem;
+  }
+}

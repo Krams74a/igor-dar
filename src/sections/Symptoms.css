@@ -1,0 +1,98 @@
+.symptoms-title {
+    font-family: 'Onest', sans-serif;
+    font-weight: 500;
+    font-size: 3.55rem;
+    line-height: 1.1;
+    color: #2B308B;
+    margin-bottom: 30px;
+}
+
+.symptoms-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .symptoms-subtitle {
+        font-size: 1.55rem;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #symptoms h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #symptoms h2 {
+        font-size: 32px;
+    }
+}
+
+#symptoms {
+    background: #F8F9FD;
+}
+
+.symptom-block {
+    background: rgba(43, 48, 139, 0.1) !important;
+    border-radius: 30px;
+    padding: 30px 25px;
+    backdrop-filter: blur(45px);
+    box-shadow: inset 20px -20px 30px rgba(165, 165, 165, 0.1),
+        inset -20px 20px 30px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.symptom-block h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.symptom-block ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.symptom-block ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.symptom-image {
+    width: 100%;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.symptom-image:hover {
+    transform: scale(1.05);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .flex-row-reverse {
+        flex-direction: row !important;
+    }
+    .symptom-block,
+    .symptom-image {
+        height: 300px; 
+    }
+}

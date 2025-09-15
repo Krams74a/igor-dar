@@ -17,7 +17,7 @@ function Testimonials() {
   return (
     <section id="testimonials" className="py-5 testimonials-section">
       <Container>
-        <h2 className="mb-5 text-center">Отзывы клиентов</h2>
+        <h2 className="mb-5 text-center title">Отзывы клиентов</h2>
         <Row className="mb-5 g-4">
           <Col md={6}>
             <h4 className="mb-3">Текстовые отзывы</h4>

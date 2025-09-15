@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import './Hero.css';
 
 function Hero() {
@@ -7,15 +7,23 @@ function Hero() {
       <Container>
         <Row className="align-items-center">
           <Col md={8}>
-            <div className="glass-block">
-              <h1 className="display-5 fw-bold">
+            <div className="hero-glass-block">
+              <h1 className="display-5 fw-bold white-text">
                 Избавим вас от панических атак, неврозов и тревожных расстройств <span className="text-accent">за 5 недель</span>
               </h1>
-              <p className="lead">
+              <p className="lead black-text">
                 Уникальная методика клинического психолога и эксперта федеральных телеканалов — Игоря Дара
               </p>
-              <Button size="lg" className="hero-button" variant="primary">Записаться на консультацию</Button>
-              <p className="mt-3"><i>+ в подарок чек лист «Что делать при панической атаке»</i></p>
+
+              <div className="button-container">
+                <button className="hero-button">
+                  <span>Записаться на консультацию</span>
+                </button>
+              </div>
+
+              <p className="lead mt-3 black-text gift-text">
+                🎁 + в подарок чек лист «Что делать при панической атаке»
+              </p>
             </div>
           </Col>
         </Row>

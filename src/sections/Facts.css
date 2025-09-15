@@ -1,88 +1,85 @@
 #facts {
-  background: #5A81FA;
-  padding: 60px 0;
+  background: #F8F9FD;
+  padding: 80px 15px;
+  overflow-x: hidden;
 }
 
-#facts h2 {
-  color: #000;
+.facts-heading {
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1;
   text-align: center;
+  color: #2B308B;
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 2.2rem; /* увеличили */
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Общий стеклянный стиль для карточки */
 .fact-card {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255,255,255,0.25);
+  position: relative;
+  background: rgba(168, 177, 206, 0.08);
   border-radius: 20px;
-  padding: 35px 30px; /* немного увеличили паддинг */
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  height: 100%;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  box-shadow: inset 20px -20px 30px rgba(165,165,165,0.08),
+              inset -20px 20px 30px rgba(255,255,255,0.08);
+  border: none;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 200px;
 }
 
 .fact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  transform: translateY(-4px);
+  box-shadow: inset 20px -20px 30px rgba(165,165,165,0.12),
+              inset -20px 20px 30px rgba(255,255,255,0.12);
 }
 
-/* Строка с иконкой и заголовком */
-.fact-card .d-flex.align-items-center {
-  margin-bottom: 18px;
+.fact-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
 }
 
-.fact-card h5 {
-  font-weight: 700;
-  font-size: 1.5rem; /* увеличили */
-  color: #000; /* черный текст */
+.fact-title {
+  font-family: 'Onest', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #000000;
+  margin: 0;
 }
 
-/* Текст факта */
-.fact-card p {
-  color: #000; /* черный текст */
-  font-size: 1.15rem; /* увеличили */
-  line-height: 1.6;
-  margin-top: 0;
+.fact-text {
+  font-family: 'Onest', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1F1F1F;
+  margin: 0;
 }
 
-/* Иконки */
-.fact-card .text-primary {
-  color: #0d6efd !important;
-}
+.fact-card .text-primary { color: #0d6efd !important; }
+.fact-card .text-success { color: #198754 !important; }
+.fact-card .text-warning { color: #ffc107 !important; }
+.fact-card .text-danger { color: #dc3545 !important; }
 
-.fact-card .text-success {
-  color: #198754 !important;
-}
-
-.fact-card .text-warning {
-  color: #ffc107 !important;
-}
-
-.fact-card .text-danger {
-  color: #dc3545 !important;
-}
-
-/* Адаптив */
 @media (max-width: 991.98px) {
-  #facts h2 {
-      font-size: 1.9rem;
-  }
+  .facts-heading { font-size: 40px; margin-bottom: 40px; }
+  .fact-card { padding: 20px; min-height: auto; }
+  .fact-title { font-size: 22px; }
+  .fact-text { font-size: 18px; line-height: 1.35; }
+}
 
-  .fact-card {
-      padding: 25px 20px;
-  }
-
-  .fact-card h5 {
-      font-size: 1.3rem;
-  }
-
-  .fact-card p {
-      font-size: 1.05rem;
-  }
+@media (max-width: 576px) {
+  .facts-heading { font-size: 32px; }
+  .fact-card { padding: 15px; }
+  .fact-title { font-size: 20px; }
+  .fact-text { font-size: 16px; line-height: 1.25; }
 }

@@ -10,7 +10,15 @@
 }
 
 .text-accent {
-  color: #5A81FA;
+  color: #2B308B;
+}
+
+.white-text {
+  color: #FFF;
+}
+
+.black-text {
+  color: #000;
 }
 
 body {

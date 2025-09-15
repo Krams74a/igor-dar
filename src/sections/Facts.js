@@ -7,38 +7,38 @@ function Facts() {
     { 
       title: "Онлайн-формат", 
       text: "Занятия проходят удалённо — вы работаете над собой в привычной и безопасной обстановке, где чувствуете себя максимально комфортно.", 
-      icon: <FaLaptop size={28} className="text-primary me-2" /> 
+      icon: <FaLaptop size={28} className="text-primary" /> 
     },
     { 
       title: "Без медикаментов", 
       text: "Методика не требует таблеток — значит, никаких побочных эффектов и зависимости от препаратов.", 
-      icon: <FaPills size={28} className="text-success me-2" /> 
+      icon: <FaPills size={28} className="text-success" /> 
     },
     { 
       title: "Индивидуальный подход", 
       text: "Вы работаете лично с психологом, а не с записью или шаблонным курсом. Каждая сессия строится под вашу ситуацию.", 
-      icon: <FaUserFriends size={28} className="text-warning me-2" /> 
+      icon: <FaUserFriends size={28} className="text-warning" /> 
     },
     { 
       title: "Решение причины, а не симптомов", 
       text: "Мы работаем с корнем проблемы, чтобы тревожность не возвращалась, а не просто приглушаем её проявления.", 
-      icon: <FaSeedling size={28} className="text-danger me-2" /> 
+      icon: <FaSeedling size={28} className="text-danger" /> 
     },
   ];
 
   return (
     <section id="facts">
       <Container>
-        <h2>Почему выбирают нас</h2>
+        <h2 className="facts-heading text-center title">Почему выбирают нас</h2>
         <Row className="g-4">
           {facts.map((fact, i) => (
             <Col key={i} xs={12} md={6}>
-              <Card className="fact-card h-100 p-4 border-0">
-                <div className="d-flex align-items-center mb-2">
+              <Card className="fact-card h-100 p-3 border-0">
+                <div className="fact-header">
                   {fact.icon}
-                  <h5 className="mb-0">{fact.title}</h5>
+                  <h5 className="fact-title">{fact.title}</h5>
                 </div>
-                <p>{fact.text}</p>
+                <p className="fact-text">{fact.text}</p>
               </Card>
             </Col>
           ))}

@@ -1,6 +1,6 @@
-import { Container, Row, Col, Button, Modal, Image } from "react-bootstrap";
+import { Container, Row, Col, Modal, Image } from "react-bootstrap";
 import { useState } from "react";
-import igorImage from "../IMG_8315.jpg";
+import igorImage from "../assets/images/igor_dar.jpg";
 
 import s1 from "../sertificates/s1.jpg";
 import s2 from "../sertificates/s2.jpg";
@@ -21,52 +21,45 @@ function About() {
   };
 
   return (
-    <section id="about" className="pt-0">
+    <section id="about">
       <Container>
-      <Row className="g-4">
-  {/* Фото Игоря */}
-  <Col xs={12} md={5}>
-    <div className="glass-block igor-block">
-      <img src={igorImage} alt="Игорь Дар" className="w-100 igor-image" />
-    </div>
-  </Col>
+        <Row className="g-4 align-items-stretch">
+          <Col xs={12} md={5} className="d-flex igor-container">
+            <div className="glass-block igor-block flex-fill">
+              <img src={igorImage} alt="Игорь Дар" className="w-100 h-100 object-fit-cover" />
+            </div>
+          </Col>
+          <Col xs={12} md={7} className="d-flex flex-column blocks-container">
+            <div className="glass-block mb-4 flex-fill">
+              <h2>Автор программы — клинический психолог, постоянный спикер федеральных телеканалов.</h2>
+              <p>Я знаю, как тяжело жить в состоянии страха и тревоги. Эти мучительные ощущения можно и нужно прекратить.</p>
+              <p>Моя методика помогает избавиться от панических атак и тревожных расстройств всего за 5 недель и вернуть привычное состояние спокойствия и контроля над своей жизнью</p>
+              <p>Я лично буду сопровождать вас на каждом шаге, пока мы не достигнем результата.</p>
+            </div>
 
-  {/* Текстовая часть */}
-  <Col xs={12} md={7}>
-    <div className="glass-block mb-4">
-      <h2>Автор программы — клинический психолог, постоянный спикер федеральных телеканалов.</h2>
-      <p>Я знаю, как тяжело жить в состоянии страха и тревоги. Эти мучительные ощущения можно и нужно прекратить.</p>
-      <p>Моя методика помогает избавиться от панических атак и тревожных расстройств всего за 5 недель и вернуть привычное состояние спокойствия и контроля над своей жизнью.</p>
-      <p>Я лично буду сопровождать вас на каждом шаге, пока мы не достигнем результата.</p>
-    </div>
-
-    <div className="glass-block mb-4">
-      <p>Мои квалификации подтверждены сертификатами и дипломами:</p>
-      <div className="d-flex flex-wrap gap-3 mb-2 justify-content-start justify-content-md-start">
-        {certificates.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`Сертификат ${i + 1}`}
-            className="img-thumbnail"
-            style={{ width: "120px", cursor: "pointer" }}
-            onClick={() => handleOpen(src)}
-          />
-        ))}
-      </div>
-    </div>
-  </Col>
-</Row>
-
+            <div className="glass-block mt-auto">
+              <p>Мои квалификации подтверждены сертификатами и дипломами:</p>
+              <div className="d-flex flex-wrap gap-3">
+                {certificates.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`Сертификат ${i + 1}`}
+                    className="img-thumbnail"
+                    style={{ width: "120px", cursor: "pointer" }}
+                    onClick={() => handleOpen(src)}
+                  />
+                ))}
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Container>
-
-      {/* Модальное окно */}
       <Modal show={show} onHide={() => setShow(false)} centered dialogClassName="modal-auto">
         <Modal.Body className="p-0 d-flex justify-content-center">
           <Image src={currentImg} fluid />
         </Modal.Body>
       </Modal>
-      
     </section>
   );
 }

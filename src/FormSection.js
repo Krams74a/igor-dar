@@ -1,17 +1,19 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import './FormSection.css';
 
 function FormSection({ formType }) {
   if (formType === "first") {
     return (
-      <section 
-        id="form" 
+      <section
+        id="form"
         className="py-5 form-section"
       >
         <Container>
-          <h2 className="mb-3 text-center">Узнали свои симптомы?</h2>
-          <h2 className="mb-3 text-center">Запишитесь на консультацию</h2>
-          <p className="text-center mb-4 text-muted">
+          <h2 className="form-title text-center mb-3 title">
+            Узнали свои симптомы?<br />
+            Запишитесь на консультацию
+          </h2>
+          <p className="form-subtitle text-center mb-4">
             Точно диагностировать заболевание может только специалист, не откладывайте консультацию на потом, записывайтесь в форме ниже.
           </p>
           <Row>
@@ -27,14 +29,11 @@ function FormSection({ formType }) {
                   <Form.Group className="mb-3">
                     <Form.Control as="textarea" rows={3} placeholder="Комментарий" className="form-control-glass" />
                   </Form.Group>
-                  <div className="d-grid mt-3">
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="text-white fw-bold submit-btn"
-                    >
-                      Отправить
-                    </Button>
+
+                  <div className="button-container">
+                    <button type="submit" className="hero-button">
+                      <span>Записаться на консультацию</span>
+                    </button>
                   </div>
                 </Form>
               </div>
@@ -45,13 +44,15 @@ function FormSection({ formType }) {
     );
   } else {
     return (
-      <section 
-        id="form" 
+      <section
+        id="form"
         className="py-5 form-section"
       >
         <Container>
-          <h2 className="mb-3 text-center">Запишитесь на консультацию</h2>
-          <p className="text-center mb-4 text-muted">
+          <h2 className="form-title text-center mb-3 title">
+            Запишитесь на консультацию
+          </h2>
+          <p className="form-subtitle text-center mb-4">
             Точно диагностировать заболевание может только специалист, не откладывайте консультацию на потом, записывайтесь в форме ниже.
           </p>
           <Row>
@@ -67,14 +68,10 @@ function FormSection({ formType }) {
                   <Form.Group className="mb-3">
                     <Form.Control as="textarea" rows={3} placeholder="Комментарий" className="form-control-glass" />
                   </Form.Group>
-                  <div className="d-grid mt-3">
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="text-white fw-bold submit-btn"
-                    >
-                      Отправить
-                    </Button>
+                  <div className="button-container">
+                    <button type="submit" className="hero-button">
+                      <span>Записаться на консультацию</span>
+                    </button>
                   </div>
                 </Form>
               </div>
@@ -84,7 +81,7 @@ function FormSection({ formType }) {
       </section>
     );
   }
-  
+
 }
 
 export default FormSection;

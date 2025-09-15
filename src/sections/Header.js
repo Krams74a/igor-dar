@@ -1,10 +1,10 @@
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import logo from "../logo.png";
+import logo from "../assets/logo/logo.png";
 import './Header.css';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="header-navbar">
+    <Navbar expand="xl" className="header-navbar">
       <Container>
         <Navbar.Brand href="#hero" className="fw-bold">
           <img src={logo} alt="Логотип" height="40" />
@@ -14,10 +14,10 @@ function Header() {
           <Nav className="me-auto">
             <Nav.Link href="#about">О нас</Nav.Link>
             <Nav.Link href="#testimonials">Отзывы</Nav.Link>
-            <Nav.Link href="#about">О программе</Nav.Link>
+            <Nav.Link href="#symptoms">О программе</Nav.Link>
             <Nav.Link href="#footer">Контакты</Nav.Link>
             <Nav.Link href="#blog">Блог</Nav.Link>
-            <Nav.Link href="#services">Услуги</Nav.Link>
+            <Nav.Link href="#how-to-book">Услуги</Nav.Link>
           </Nav>
           <div className="d-flex align-items-center gap-3">
             <a href="tel:+74954310076" className="text-decoration-none text-dark">
