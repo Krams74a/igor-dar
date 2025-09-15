@@ -20,7 +20,7 @@
 
   .hero-section .glass-block {
     backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.55); /* прозрачность 0.55 */
+    background-color: rgba(225, 225, 225, 0.55); /* прозрачность 0.55 */
     border-radius: 16px;
     padding: 40px 30px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -33,10 +33,15 @@
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
   }
 
+  .hero-button {
+    background: #2CA9DA;
+    border: none;
+  }
+
   @media (max-width: 768px) {
     .hero-section { padding-top: 80px; }
   }
 
   @media (max-width: 576px) {
-    .hero-section { padding-top: 60px; }
+    .hero-section { padding-top: 80px; }
   }

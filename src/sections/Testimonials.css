@@ -1,6 +1,6 @@
 /* Фон секции отзывов */
 .testimonials-section {
-  background: linear-gradient(135deg, #c8e1f6 0%, #a3cde0 100%);
+  background: linear-gradient(135deg, #72bfff 0%, #009be2 100%);
   padding-top: 60px;
   padding-bottom: 60px;
   color: #000;
@@ -54,4 +54,8 @@
   .d-flex.flex-wrap {
     justify-content: center;
   }
+}
+
+.carousel-item {
+  padding: 0 15px;
 }

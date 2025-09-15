@@ -9,13 +9,13 @@ function Hero() {
           <Col md={8}>
             <div className="glass-block">
               <h1 className="display-5 fw-bold">
-                Избавим вас от панических атак, неврозов и тревожных расстройств <span className="text-primary">за 5 недель</span>
+                Избавим вас от панических атак, неврозов и тревожных расстройств <span className="text-accent">за 5 недель</span>
               </h1>
               <p className="lead">
                 Уникальная методика клинического психолога и эксперта федеральных телеканалов — Игоря Дара
               </p>
-              <Button size="lg" variant="primary">Записаться на консультацию</Button>
-              <p className="mt-3">+ в подарок чек лист «Что делать при панической атаке»</p>
+              <Button size="lg" className="hero-button" variant="primary">Записаться на консультацию</Button>
+              <p className="mt-3"><i>+ в подарок чек лист «Что делать при панической атаке»</i></p>
             </div>
           </Col>
         </Row>

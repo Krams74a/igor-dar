@@ -23,7 +23,7 @@ function Header() {
             <a href="tel:+74954310076" className="text-decoration-none text-dark">
               +7 (495) 431-00-76
             </a>
-            <Button href="#form" variant="outline-primary">Записаться на консультацию</Button>
+            <Button href="#form" className="header-button" variant="outline-primary">Записаться на консультацию</Button>
           </div>
         </Navbar.Collapse>
       </Container>

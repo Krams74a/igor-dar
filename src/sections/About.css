@@ -1,7 +1,7 @@
 /* Фото врача */
 /* Секция "О нас" */
 #about {
-  background: linear-gradient(52deg, #f0faff 0%, #2CA9DA 100%); /* градиент вернули */
+  background: linear-gradient(52deg, #56c7ff 0%, #18beff 100%); /* градиент вернули */
   padding-top: 60px;
   padding-bottom: 60px;
 }
