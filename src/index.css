@@ -2,7 +2,7 @@
   --color-bg: #FFFFFF;
   --color-bg-contrast: #EDF0F7;
   --color-text: #252525;
-  --color-accent: #2CA9DA;
+  --color-accent: #5A81FA;
   --color-accent-gradient: linear-gradient(308deg, #49AFD8 0%, #9ddbf3 40%, #bde6f6 100%);
   --color-toggle-inactive: #F1F1F1;
   --color-toggle-active: #444444;
@@ -10,12 +10,12 @@
 }
 
 .text-accent {
-  color: #2CA9DA;
+  color: #5A81FA;
 }
 
 body {
   margin: 0;
-  font-family: 'Onest', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-bg);

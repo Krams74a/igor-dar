@@ -1,6 +1,6 @@
 /* Фон секции */
 .form-section {
-    background: linear-gradient(52deg, #56c7ff 0%, #18beff 100%);
+    background: #CEDEFF;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -42,13 +42,13 @@
   
   /* Кнопка отправки */
   .submit-btn {
-    background: #3AB2A1;
+    background: #5A81FA;
     border: none;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .submit-btn:hover {
-    background: #309587;
+    background: #4e70d8;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   }

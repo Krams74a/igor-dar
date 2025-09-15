@@ -1,6 +1,6 @@
 /* Фон секции процесса */
 .process-section {
-  background: linear-gradient(135deg, #c8e1f6 0%, #a3cde0 100%);
+  background: #CEDEFF;
   padding-top: 60px;
   padding-bottom: 60px;
   color: #000;
