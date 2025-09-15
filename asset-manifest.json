@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/igor-dar/static/css/main.80ef2f8d.css",
-    "main.js": "/igor-dar/static/js/main.746447de.js",
+    "main.css": "/igor-dar/static/css/main.577db0e3.css",
+    "main.js": "/igor-dar/static/js/main.cbe4b888.js",
     "static/media/doctor-doing-their-work-pediatrics-office.jpg": "/igor-dar/static/media/doctor-doing-their-work-pediatrics-office.b3923abdb42390b995b4.jpg",
     "static/media/IMG_8315.jpg": "/igor-dar/static/media/IMG_8315.369a9145764ac03a16b6.jpg",
     "static/media/hero-background.png": "/igor-dar/static/media/hero-background.6aa889355ca42b741815.png",
@@ -13,13 +13,12 @@
     "static/media/symptoms2.jpg": "/igor-dar/static/media/symptoms2.58f6cab8f32a3ed38874.jpg",
     "static/media/symptoms1.jpg": "/igor-dar/static/media/symptoms1.d2695dfbceae457ce081.jpg",
     "static/media/symptoms3.jpg": "/igor-dar/static/media/symptoms3.d99b31c3f5d14f17811b.jpg",
-    "static/media/ratemypost.ttf": "/igor-dar/static/media/ratemypost.595102e8a8212f847e9d.ttf",
     "index.html": "/igor-dar/index.html",
-    "main.80ef2f8d.css.map": "/igor-dar/static/css/main.80ef2f8d.css.map",
-    "main.746447de.js.map": "/igor-dar/static/js/main.746447de.js.map"
+    "main.577db0e3.css.map": "/igor-dar/static/css/main.577db0e3.css.map",
+    "main.cbe4b888.js.map": "/igor-dar/static/js/main.cbe4b888.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ef2f8d.css",
-    "static/js/main.746447de.js"
+    "static/css/main.577db0e3.css",
+    "static/js/main.cbe4b888.js"
   ]
 }
