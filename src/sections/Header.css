@@ -19,3 +19,17 @@
   }
 
 
+  @media (max-width: 767.98px) {
+    .header-navbar .d-flex {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+  
+    .header-navbar .d-flex a,
+    .header-navbar .d-flex .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
