@@ -168,7 +168,7 @@ function Testimonials() {
                   <a href={src} target="_blank" rel="noreferrer" className="screen-link">
                     <Card className="screen-card mx-auto">
                       <div className="screen-image-wrap">
-                        <img src={src} alt={`Скриншот отзыва ${i + 1}`} className="screen-image" />
+                        <img src={src} alt={`Скриншот отзыва ${i + 1}`} className="screen-image" loading="lazy" decoding="async" />
                       </div>
                     </Card>
                   </a>
@@ -207,15 +207,26 @@ function Testimonials() {
               }}
               className="videos-swiper"
             >
-              {videoLinks.map((link, i) => (
+              {videoLinks.map((link, i) => {
+                const safeLink = link.replace('www.youtube.com', 'www.youtube-nocookie.com');
+                return (
                 <SwiperSlide key={i}>
                   <Card className="video-card">
                     <Ratio aspectRatio="16x9">
-                      <iframe src={link} title={`Видеоотзыв ${i + 1}`} allowFullScreen />
+                      <iframe
+                        src={safeLink}
+                        title={`Видеоотзыв ${i + 1}`}
+                        loading="lazy"
+                        referrerPolicy="origin-when-cross-origin"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      />
                     </Ratio>
                   </Card>
                 </SwiperSlide>
-              ))}
+                );
+              })}
               <div className="videos-pagination"></div>
             </Swiper>
             <div className="videos-controls d-flex justify-content-center gap-2 mt-3">

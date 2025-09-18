@@ -378,6 +378,16 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobile spacing: add gap below slider controls so next headings aren't tight */
+@media (max-width: 576px) {
+  .yell-slider .slider-controls {
+    margin-bottom: 12px;
+  }
+  .screenshots-controls {
+    margin-bottom: 16px;
+  }
+}
+
 .slider-btn:hover .arrow-left,
 .slider-btn:hover .arrow-right {
   transform: scale(1.1);
