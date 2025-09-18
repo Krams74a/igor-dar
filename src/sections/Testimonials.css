@@ -1,29 +1,133 @@
 .testimonials-section {
-  background: #cedeff;
+  background: var(--color-surface-2);
   padding-top: 60px;
   padding-bottom: 60px;
-  color: #000;
+  color: var(--color-black);
 }
 
-.glass-testimonial {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.testimonial-card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background-color: var(--glass-bg-45);
+  border: 1px solid var(--glass-bg-30);
   border-radius: 16px;
+  padding: 16px;
+}
+
+.testimonial-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.testimonial-rating .stars {
+  color: #F5B300;
+  letter-spacing: 1px;
+}
+
+.testimonial-rating .date {
+  font-size: 0.9rem;
+  color: var(--color-text-2);
+}
+
+/* Отступ между звёздами и датой в модальном окне */
+.modal .testimonial-rating {
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.modal .testimonial-rating .date {
+  margin-left: 0;
+  margin-top: 2px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.testimonial-author {
+  font-weight: 500;
+  color: var(--color-text-1);
+}
+
+.yell-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.yell-link:hover {
+  text-decoration: underline;
+}
+
+.yell-badge-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.yell-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+
+.yell-logo {
+  display: inline-block;
+  background: #E30613;
+  color: #fff;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.screen-card {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--glass-bg-30);
+  background-color: var(--glass-bg-45);
+  max-width: 400px;
+}
+
+.screen-image-wrap {
+  position: relative;
+}
+
+.screen-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.video-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--glass-bg-30);
+  background-color: var(--glass-bg-45);
 }
 
 .btn-glass {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #000;
+  background-color: var(--glass-bg-35);
+  border: 1px solid var(--glass-bg-40);
+  color: var(--color-black);
 }
 
 
 @media (max-width: 991.98px) {
-  .glass-testimonial {
+  .testimonial-card {
     max-width: 100% !important;
     margin-left: auto;
     margin-right: auto;
@@ -36,5 +140,293 @@
 
 .carousel-item {
   padding: 0 15px;
+}
+
+/* Swiper стили для Yell слайдера */
+.yell-swiper {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.yell-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.yell-swiper .testimonial-card {
+  /* Используем spaceBetween у Swiper, поэтому внешний margin не нужен */
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Растягиваем содержимое слайдов на всю высоту для ровной сетки */
+.yell-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* Растягиваем контент, чтобы футер карточки всегда был внизу */
+.yell-swiper .testimonial-card .card-body {
+  flex: 1 1 auto;
+}
+
+/* CSS стрелки */
+.arrow-left,
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transition: all 0.3s ease;
+}
+
+.arrow-left {
+  border-width: 6px 8px 6px 0;
+  border-color: transparent var(--color-black) transparent transparent;
+  margin-left: -2px;
+}
+
+.arrow-right {
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent var(--color-black);
+  margin-right: -2px;
+}
+
+/* Скрываем стандартные кнопки Swiper */
+.yell-swiper .swiper-button-next,
+.yell-swiper .swiper-button-prev {
+  display: none;
+}
+
+/* Стили для пагинации */
+.yell-swiper .swiper-pagination {
+  position: static !important;
+  margin-top: 20px;
+  text-align: center;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.yell-swiper .swiper-pagination-bullet {
+  opacity: 0.3;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.yell-swiper .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.yell-swiper .swiper-pagination-bullet:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* Горизонтальное расположение пользовательских кнопок навигации */
+.yell-slider .slider-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Swiper для скриншотов отзывов */
+.screenshots-swiper {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.screenshots-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.screenshots-swiper .screen-card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.screenshots-swiper .swiper-pagination {
+  position: static !important;
+  margin-top: 15px;
+  text-align: center;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.screenshots-swiper .swiper-pagination-bullet {
+  opacity: 0.3;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.screenshots-swiper .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.screenshots-swiper .swiper-pagination-bullet:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.screenshots-controls {
+  margin-top: 15px;
+}
+
+/* Swiper для видеоотзывов */
+.videos-swiper {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.videos-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.videos-swiper .video-card {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.videos-swiper .swiper-pagination {
+  position: static !important;
+  margin-top: 15px;
+  text-align: center;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.videos-swiper .swiper-pagination-bullet {
+  opacity: 0.3;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.videos-swiper .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.videos-swiper .swiper-pagination-bullet:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.videos-controls {
+  margin-top: 15px;
+}
+
+/* Общие стили для всех кнопок навигации */
+.slider-btn {
+  border: 1px solid var(--glass-bg-40);
+  background: var(--glass-bg-35);
+  color: var(--color-black);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  font-weight: 300;
+  line-height: 1;
+  user-select: none;
+  position: relative;
+}
+
+.slider-btn:hover {
+  background: var(--glass-bg-45);
+  border-color: var(--glass-bg-50);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-btn:hover .arrow-left,
+.slider-btn:hover .arrow-right {
+  transform: scale(1.1);
+}
+
+.slider-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Скрываем стандартные кнопки Swiper для всех каруселей */
+.screenshots-swiper .swiper-button-next,
+.screenshots-swiper .swiper-button-prev,
+.videos-swiper .swiper-button-next,
+.videos-swiper .swiper-button-prev {
+  display: none;
+}
+
+.screen-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.screen-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-more-btn {
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin-top: 8px;
+  display: block;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline !important;
+}
+
+.testimonial-text-full {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 

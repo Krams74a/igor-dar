@@ -1,5 +1,5 @@
 .process-section {
-  background: #f9f9f9;
+  background: var(--color-process-bg);
 }
 
 .steps-list {
@@ -14,15 +14,15 @@
   align-items: flex-start;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px var(--shadow-05);
 }
 
 .step-number {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3eeb;
+  color: var(--color-bs-primary);
   flex-shrink: 0;
   line-height: 1;
 }

@@ -1,6 +1,6 @@
 #about {
-  background: #2B308B;
-  padding-top: 100px;  /* было 60px */
+  background: var(--color-primary);
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 
@@ -21,23 +21,23 @@
   -webkit-backdrop-filter: blur(45px);
   background: rgba(168, 177, 206, 0.1);
   box-shadow: inset 20px -20px 30px rgba(165, 165, 165, 0.1),
-              inset -20px 20px 30px rgba(255, 255, 255, 0.1);
+              inset -20px 20px 30px var(--glass-bg-10);
   border-radius: 30px;
   padding: 40px;
-  color: #fff;
+  color: var(--color-white);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 #about .glass-block:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 28px var(--shadow-25);
 }
 
 #about .glass-block h2 {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-white);
   line-height: 1.1;
 }
 
@@ -45,7 +45,7 @@
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 300;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 25px;
   text-align: left;
 }
@@ -57,7 +57,7 @@
 
 #about .glass-block .img-thumbnail:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px var(--shadow-20);
 }
 
 @media (max-width: 991.98px) {

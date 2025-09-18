@@ -1,5 +1,5 @@
 .benefits-section {
-  background: #CEDEFF;
+  background: var(--color-surface-2);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -7,20 +7,20 @@
 .glass-block {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: var(--glass-bg-15);
+  border: 1px solid var(--glass-border-25);
   border-radius: 16px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 24px var(--shadow-15), 0 20px 40px var(--shadow-10);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-block:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 30px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px var(--shadow-20), 0 30px 60px var(--shadow-15);
 }
 
 .icon-wrapper {
@@ -40,7 +40,7 @@
 .glass-block h5,
 .glass-block .card-title {
   font-weight: 600;
-  color: #000;
+  color: var(--color-black);
   margin-bottom: 0.5rem;
   min-height: 3em;
   display: flex;
@@ -52,7 +52,7 @@
 
 .glass-block p,
 .glass-block .card-text {
-  color: #333;
+  color: var(--color-grey-333);
   font-size: 1.3rem;
   line-height: 1.5;
   flex-grow: 1;

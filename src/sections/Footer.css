@@ -1,6 +1,6 @@
 .footer-section {
-  background-color: #1F1F1F;
-  color: #ffffff;
+  background-color: var(--color-footer-bg);
+  color: var(--color-white);
   font-size: 0.95rem;
 }
 

@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer-section py-4">
+    <footer id="footer" className="footer-section py-4">
       <Container>
         <Row>
           <Col md={4} className="text-start mb-3 mb-md-0">

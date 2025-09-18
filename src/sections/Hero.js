@@ -6,7 +6,7 @@ function Hero() {
     <section id="hero" className="hero-section">
       <Container>
         <Row className="align-items-center">
-          <Col md={8}>
+          <Col md={7} lg={6}>
             <div className="hero-glass-block">
               <h1 className="display-5 fw-bold white-text">
                 Избавим вас от панических атак, неврозов и тревожных расстройств <span className="text-accent">за 5 недель</span>
@@ -16,13 +16,13 @@ function Hero() {
               </p>
 
               <div className="button-container">
-                <button className="hero-button">
+                <a className="hero-button" href="#form">
                   <span>Записаться на консультацию</span>
-                </button>
+                </a>
               </div>
 
               <p className="lead mt-3 black-text gift-text">
-                🎁 + в подарок чек лист «Что делать при панической атаке»
+                🎁 + в подарок чек-лист «Что делать при панической атаке»
               </p>
             </div>
           </Col>

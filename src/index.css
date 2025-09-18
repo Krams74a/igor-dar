@@ -7,19 +7,47 @@
   --color-toggle-inactive: #F1F1F1;
   --color-toggle-active: #444444;
   --color-toggle-active-text: #FFFFFF;
+  
+  /* Project palette */
+  --color-primary: #3B47E0;
+  --color-primary-dark: #2E37B5;
+  --color-surface: #F8F9FD;
+  --color-surface-2: #CEDEFF;
+  --color-footer-bg: #1F1F1F;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-grey-333: #333333;
+  --color-process-bg: #f9f9f9;
+  --color-hero-panel: #D9D9D919;
+  --color-bs-primary: #0d6efd;
+
+  /* Glass and borders */
+  --glass-bg-10: rgba(255, 255, 255, 0.10);
+  --glass-bg-15: rgba(255, 255, 255, 0.15);
+  --glass-bg-20: rgba(255, 255, 255, 0.20);
+  --glass-bg-25: rgba(255, 255, 255, 0.25);
+  --glass-bg-30: rgba(255, 255, 255, 0.30);
+  --glass-bg-35: rgba(255, 255, 255, 0.35);
+  --glass-bg-40: rgba(255, 255, 255, 0.40);
+  --glass-bg-45: rgba(255, 255, 255, 0.45);
+  --glass-border-25: rgba(255, 255, 255, 0.25);
+  --glass-border-40: rgba(255, 255, 255, 0.40);
+
+  /* Shadows */
+  --shadow-05: rgba(0, 0, 0, 0.05);
+  --shadow-08: rgba(0, 0, 0, 0.08);
+  --shadow-10: rgba(0, 0, 0, 0.10);
+  --shadow-12: rgba(0, 0, 0, 0.12);
+  --shadow-15: rgba(0, 0, 0, 0.15);
+  --shadow-20: rgba(0, 0, 0, 0.20);
+  --shadow-25: rgba(0, 0, 0, 0.25);
 }
 
-.text-accent {
-  color: #2B308B;
-}
+.text-accent { color: var(--color-primary); }
 
-.white-text {
-  color: #FFF;
-}
+.white-text { color: var(--color-white); }
 
-.black-text {
-  color: #000;
-}
+.black-text { color: var(--color-black); }
 
 body {
   margin: 0;

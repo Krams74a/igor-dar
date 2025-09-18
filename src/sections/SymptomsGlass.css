@@ -1,15 +1,15 @@
 #symptoms {
-  background: #CEDEFF;
+  background: var(--color-surface-2);
 }
 
 .symptom-block-glass {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255,255,255,0.25);
+  background: var(--glass-bg-10);
+  border: 1px solid var(--glass-border-25);
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px var(--shadow-15);
 }
 
 .symptoms-split {
@@ -37,13 +37,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255,255,255,0.2);
+  background: var(--glass-bg-20);
   padding: 15px 20px;
   border-radius: 16px;
   font-weight: 600;
   font-size: 1.2rem;
-  color: #000;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  color: var(--color-black);
+  box-shadow: 0 4px 20px var(--shadow-20);
 }
 
 .title-pane .icon {
@@ -56,23 +56,23 @@
   align-items: center;
   gap: 10px;
   padding: 12px 20px;
-  color: #000;
+  color: var(--color-black);
   border-radius: 12px;
-  background: rgba(255,255,255,0.1);
+  background: var(--glass-bg-10);
   backdrop-filter: blur(15px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px var(--shadow-10);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
 }
 
 .symptom-pane:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px var(--shadow-20);
 }
 
 .symptom-pane::before {
   content: "•";
-  color: #0d6efd;
+  color: var(--color-bs-primary);
   font-weight: bold;
 }
 
