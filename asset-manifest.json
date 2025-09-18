@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/igor-dar/static/css/main.2eaaa1f2.css",
-    "main.js": "/igor-dar/static/js/main.5cceb910.js",
+    "main.css": "/igor-dar/static/css/main.2453c6ae.css",
+    "main.js": "/igor-dar/static/js/main.cdcd471e.js",
     "static/media/igor_dar.jpg": "/igor-dar/static/media/igor_dar.369a9145764ac03a16b6.jpg",
     "static/media/4E4A5351.jpg": "/igor-dar/static/media/4E4A5351.efe805ee46de64ea8c70.jpg",
     "static/media/IMG_8533-2.jpg": "/igor-dar/static/media/IMG_8533-2.a71e1513f1081b01dc86.jpg",
@@ -27,11 +27,11 @@
     "static/media/6.jpg": "/igor-dar/static/media/6.2eb8ab9fa69d4626f490.jpg",
     "static/media/9.jpg": "/igor-dar/static/media/9.71deda2bc92cf2fb8acc.jpg",
     "index.html": "/igor-dar/index.html",
-    "main.2eaaa1f2.css.map": "/igor-dar/static/css/main.2eaaa1f2.css.map",
-    "main.5cceb910.js.map": "/igor-dar/static/js/main.5cceb910.js.map"
+    "main.2453c6ae.css.map": "/igor-dar/static/css/main.2453c6ae.css.map",
+    "main.cdcd471e.js.map": "/igor-dar/static/js/main.cdcd471e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eaaa1f2.css",
-    "static/js/main.5cceb910.js"
+    "static/css/main.2453c6ae.css",
+    "static/js/main.cdcd471e.js"
   ]
 }
