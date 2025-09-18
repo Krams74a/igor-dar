@@ -1,24 +1,37 @@
 {
   "files": {
-    "main.css": "/igor-dar/static/css/main.685aa26d.css",
-    "main.js": "/igor-dar/static/js/main.5505f9e6.js",
-    "static/media/how_to_book.jpg": "/igor-dar/static/media/how_to_book.b3923abdb42390b995b4.jpg",
+    "main.css": "/igor-dar/static/css/main.2eaaa1f2.css",
+    "main.js": "/igor-dar/static/js/main.5cceb910.js",
     "static/media/igor_dar.jpg": "/igor-dar/static/media/igor_dar.369a9145764ac03a16b6.jpg",
-    "static/media/main_image.jpg": "/igor-dar/static/media/main_image.1fa59e8f852e7e34cd58.jpg",
+    "static/media/4E4A5351.jpg": "/igor-dar/static/media/4E4A5351.efe805ee46de64ea8c70.jpg",
+    "static/media/IMG_8533-2.jpg": "/igor-dar/static/media/IMG_8533-2.a71e1513f1081b01dc86.jpg",
+    "static/media/IMG_8528-2.jpg": "/igor-dar/static/media/IMG_8528-2.7f26f9711d92a359a19b.jpg",
     "static/media/s4.jpg": "/igor-dar/static/media/s4.17a9459f5cf35350a380.jpg",
     "static/media/logo.png": "/igor-dar/static/media/logo.4d2dd89055af90088f1c.png",
     "static/media/s1.jpg": "/igor-dar/static/media/s1.859cca16b0ac10a8226a.jpg",
+    "static/media/2.jpg": "/igor-dar/static/media/2.612226171820864d9d5a.jpg",
     "static/media/s2.jpg": "/igor-dar/static/media/s2.9e3305a1e11efb48310b.jpg",
+    "static/media/13.jpg": "/igor-dar/static/media/13.762f96d6836e1cc91b6e.jpg",
+    "static/media/7.jpg": "/igor-dar/static/media/7.bd2b298114be52b21bce.jpg",
     "static/media/s3.jpg": "/igor-dar/static/media/s3.0e2921ce8f5e2d2181c6.jpg",
+    "static/media/4.jpg": "/igor-dar/static/media/4.87362e819b2f9fefeefc.jpg",
+    "static/media/8.jpg": "/igor-dar/static/media/8.bb5879339db19e8b74e8.jpg",
+    "static/media/3.jpg": "/igor-dar/static/media/3.f4214440ab829b5fd1cb.jpg",
     "static/media/symptoms2.jpg": "/igor-dar/static/media/symptoms2.58f6cab8f32a3ed38874.jpg",
     "static/media/symptoms1.jpg": "/igor-dar/static/media/symptoms1.d2695dfbceae457ce081.jpg",
+    "static/media/14.jpg": "/igor-dar/static/media/14.4cb29d9b8f66d8027e6b.jpg",
+    "static/media/11.jpg": "/igor-dar/static/media/11.71113d86af19fca626fb.jpg",
     "static/media/symptoms3.jpg": "/igor-dar/static/media/symptoms3.d99b31c3f5d14f17811b.jpg",
+    "static/media/5.jpg": "/igor-dar/static/media/5.9574ae84d19e6a0bc390.jpg",
+    "static/media/10.jpg": "/igor-dar/static/media/10.b9d77c4f4fea0f66667b.jpg",
+    "static/media/6.jpg": "/igor-dar/static/media/6.2eb8ab9fa69d4626f490.jpg",
+    "static/media/9.jpg": "/igor-dar/static/media/9.71deda2bc92cf2fb8acc.jpg",
     "index.html": "/igor-dar/index.html",
-    "main.685aa26d.css.map": "/igor-dar/static/css/main.685aa26d.css.map",
-    "main.5505f9e6.js.map": "/igor-dar/static/js/main.5505f9e6.js.map"
+    "main.2eaaa1f2.css.map": "/igor-dar/static/css/main.2eaaa1f2.css.map",
+    "main.5cceb910.js.map": "/igor-dar/static/js/main.5cceb910.js.map"
   },
   "entrypoints": [
-    "static/css/main.685aa26d.css",
-    "static/js/main.5505f9e6.js"
+    "static/css/main.2eaaa1f2.css",
+    "static/js/main.5cceb910.js"
   ]
 }
